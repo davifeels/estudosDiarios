@@ -16,7 +16,7 @@ public class atividade03April {
 				x = x.replace("Meu", "Seu ");
 				x = x.replace("Anderson", "Batista ");
 				x = x.replace("Davi", "David");
-				x =x.toUpperCase("Batista");
+			
 				     System.out.println(x);    //  Seu  nome é David Batista 
 				
 				
@@ -95,31 +95,34 @@ public class atividade03April {
 //            									testeCerto
             
             
-            
-            Scanner sc = new Scanner(System.in);
-
-            String frase = "Digite uma frase: "; 
-
-            System.out.print(frase);
-            frase = sc.nextLine();
-            frase = frase.trim();
-
-            System.out.println("Frase sem espaços extras: [" + frase + "]");
-            System.out.println("Quantidade de caracteres: " + frase.length());
-            
-
- //                      Só imprime se a frase tiver tamanho suficiente
-            
-            
-            if (frase.length() > 1) {
-                System.out.println("Última Palavra: " + frase.charAt(1));
-            }
-            if (frase.length() > 6) {
-                System.out.println("Terceira Letra: " + frase.charAt(6));
-            }
-
-            sc.close();
-            
+//            
+//            Scanner sc = new Scanner(System.in);
+//
+//            String frase = "Digite uma frase: "; 
+//
+//            System.out.print(frase);
+//            frase = sc.nextLine();
+//            frase = frase.trim();
+//
+//            System.out.println("Frase sem espaços extras: [" + frase + "]");
+//            System.out.println("Quantidade de caracteres: " + frase.length());
+//            
+//
+// //                      Só imprime se a frase tiver tamanho suficiente
+//            
+//            
+//            if (frase.length() > 1) {
+//                System.out.println("Última Palavra: " + frase.charAt(1));
+//            }
+//            if (frase.length() > 6) {
+//                System.out.println("Terceira Letra: " + frase.charAt(6));
+//            }
+//
+//            sc.close();
+//            
+//            
+//            aaa
+//            
             
             
             
