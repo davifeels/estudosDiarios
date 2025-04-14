@@ -6,6 +6,7 @@ public class tabelaPrecedencia {
         // Esse arquivo é apenas uma referência de precedência de operadores.
         // Pode ser usado como base para testes ou revisões.
     }
+}
     
     /*
      * 15 - (), [], .        → Parênteses, acesso a array, acesso a membros  (Esq → Dir)
