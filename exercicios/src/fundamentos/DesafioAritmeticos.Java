@@ -1,6 +1,6 @@
 package fundamentos;
 
-public class DesafioAritmeticos {
+ class DesafioAritmeticos {
 	
 	public static void main(String[] args) {
 		

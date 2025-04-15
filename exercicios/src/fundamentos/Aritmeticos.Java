@@ -1,6 +1,6 @@
 package fundamentos;
 
-public class Aritmeticos {
+   class Aritmeticos {
 	
 	public static void main(String[] args) {
 		
