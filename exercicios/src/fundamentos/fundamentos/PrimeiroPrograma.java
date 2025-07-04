@@ -23,7 +23,7 @@ public class PrimeiroPrograma {
 			
 			
 			String a = "Corinthians";
-			String b = "Botafogo";
+			String b = "Varmeiras";
 			String c;
 			
 			System.out.println("Escolha seu time favorito entre SCCP ou VARMEIRAS:"); 
