@@ -1,0 +1,54 @@
+package fundamentos;
+
+import java.util.Scanner;
+
+public class TREINOOO {
+
+    // Códigos de cor ANSI — devem ficar fora do main
+    public static final String ANSI_RED = "\u001B[31m";
+    public static final String ANSI_GREEN = "\u001B[32m";
+    public static final String ANSI_RESET = "\u001B[0m";
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String a = "Meu nome é Davi Anderson";
+
+        System.out.print("Qual seu nome? ");
+        String nome = sc.nextLine();
+
+        System.out.println("===============");
+
+        System.out.print("Qual seu sobrenome? ");
+        String nome1 = sc.nextLine();
+
+        System.out.println("===============");
+
+        System.out.print("Qual sua média? ");
+        double media = sc.nextDouble();
+
+        System.out.println("\nEstamos carregando suas informações...");
+        System.out.println("Olá, " + nome + " " + nome1);
+
+        String resultadoFinal = media >= 7.0 ? "Aprovado." : "em recuperação.";
+        System.out.print("Você está " + resultadoFinal + "\n");
+
+        String resultadoEscolar;
+        String cor;
+
+        if (media == 10.0) {
+            resultadoEscolar = "Parabéns! Média perfeita. Apto para a próxima etapa.";
+            cor = ANSI_GREEN;
+        } else if (media >= 7.0) {
+            resultadoEscolar = "Apto para a próxima etapa.";
+            cor = ANSI_GREEN;
+        } else {
+            resultadoEscolar = "Você não está apto para a próxima etapa.";
+            cor = ANSI_RED;
+        }
+
+        System.out.println(cor + nome + ", seu resultado é: " + resultadoEscolar + ANSI_RESET);
+
+        sc.close();
+    }
+}
