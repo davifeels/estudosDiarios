@@ -3,7 +3,7 @@ public class whileDeterminado {
     public static void main(String[] args) {
 
         // Declara e inicializa a variável contador com 0
-        int contador = 0;
+        int contador = 1;
 
         // Estrutura de repetição while: executa enquanto contador for menor ou igual a 20
         while (contador <= 20) {
