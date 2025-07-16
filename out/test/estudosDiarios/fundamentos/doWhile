@@ -1,0 +1,36 @@
+package fundamentos;
+
+import java.util.Scanner;
+
+public class DoWhile {
+
+    public static void main(String[] args) {
+
+        Scanner entrada = new Scanner(System.in);
+
+        String texto = "por Favor";
+        String texto1 ="";
+
+    do {
+        System.out.println("Voce precisar falar" +
+                " a palavra magina...");
+
+        System.out.println("Quer sair? ");
+        texto = entrada.nextLine();
+    } while(!texto.equalsIgnoreCase("Por Favor"));
+
+        System.out.println("Obrigado!");
+        System.out.println("Aguarde enquando redirecionamos voce ate a saída");
+        System.out.println("Antes disso, resolva a pegadinha HAHA");
+        System.out.println("Boa Sorte daqui pra frente!");
+
+        System.out.println("em qual numero estou pensando...");
+        texto1 = entrada.nextLine();
+
+
+
+
+        entrada.close();
+
+    }
+}
