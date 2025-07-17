@@ -1,36 +1,46 @@
-package fundamentos;
-
 import java.util.Scanner;
+import java.util.Random;
 
 public class DoWhile {
 
     public static void main(String[] args) {
 
         Scanner entrada = new Scanner(System.in);
+        Random aleatorio = new Random(); // Gerador de número aleatório
 
         String texto = "por Favor";
-        String texto1 ="";
+        String texto1 = "";
 
-    do {
-        System.out.println("Voce precisar falar" +
-                " a palavra magina...");
-
-        System.out.println("Quer sair? ");
-        texto = entrada.nextLine();
-    } while(!texto.equalsIgnoreCase("Por Favor"));
+        do {
+            System.out.println("Você precisa falar a palavra mágica...");
+            System.out.println("Quer sair? ");
+            texto = entrada.nextLine();
+        } while (!texto.equalsIgnoreCase("Por Favor"));
 
         System.out.println("Obrigado!");
-        System.out.println("Aguarde enquando redirecionamos voce ate a saída");
+        System.out.println("Aguarde enquanto redirecionamos você até a saída...");
         System.out.println("Antes disso, resolva a pegadinha HAHA");
-        System.out.println("Boa Sorte daqui pra frente!");
+        System.out.println("Boa sorte daqui pra frente!");
 
-        System.out.println("em qual numero estou pensando...");
+        // Gera um número aleatório entre 1 e 10
+        int numeroPensado = aleatorio.nextInt(10) + 1;
+
+        System.out.println("Em qual número de 1 a 10 estou pensando?");
         texto1 = entrada.nextLine();
 
+        int palpite;
+        try {
+            palpite = Integer.parseInt(texto1);
 
-
+            if (palpite == numeroPensado) {
+                System.out.println("🎉 UAU! Você acertou! Era o número " + numeroPensado + "!");
+            } else {
+                System.out.println("❌ Errou! Eu estava pensando no número " + numeroPensado + ".");
+            }
+        } catch (NumberFormatException e) {
+            System.out.println("⚠️ Isso não é um número válido!");
+        }
 
         entrada.close();
-
     }
 }
