@@ -107,7 +107,7 @@ public class telaTreino {
             } else if (opcao == 0) {
                 System.out.println("Voltando ao menu principal...");
             } else {
-                System.out.println("Opção inválida.");
+                System.out.println("Opção inválida...");
             }
         }
     }
