@@ -11,7 +11,7 @@ package fundamentos;
 		double y = 2.2;
 
 		// Operações com ponto flutuante
-		System.out.println(x + y); // soma
+		System.out.println(x + y); // soma1
 		System.out.println(x - y); // subtração
 		System.out.println(x * y); // multiplicação
 		System.out.println(x / y); // divisão
