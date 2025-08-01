@@ -9,7 +9,7 @@ public class whileDeterminado {
         while (contador <= 20) {
 
             // Imprime o valor atual do contador formatado com printf (melhor para mostrar com %d)
-            System.out.printf("i = %d\n", contador);
+            System.out.printf("i = %d\n", contaador);
 
             // Incrementa o contador em 1 a cada repetição
             contador += 1;
